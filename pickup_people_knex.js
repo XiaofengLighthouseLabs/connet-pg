@@ -28,6 +28,7 @@ knex('famous_people')
        .asCallback(function(error, result){
         if (error) return console.error(error);
           console.log(result);
+          process.exit();
        });
 
     })
